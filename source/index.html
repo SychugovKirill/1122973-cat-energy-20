@@ -8,47 +8,38 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wraper">
-      <div class="page-header__logo logo">
-        <a class="logo__link">
-          <img class="logo__img" src="#" alt="Логотип Кэт энерджи картинка">
-        </a>
-        <a class="logo__link logo-text">
-          <img class="logo__img" src="#" alt="Логотип Кэт энерджи">
-        </a>
-      </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item list__item--active">
-            <a class="site-list__link">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <a class="page-header__logo logo">
+      <span class="logo__icon">
+        <!-- Логотип картинка -->
+      </span>
+      <span class="logo__text">
+        <!-- Логотип текст -->
+      </span>
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item list__item--active">
+          <a class="site-list__link">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
+
   <main class="page-main">
     <h1 class="visually-hidden">Питание для котов Кэт энерджи</h1>
 
     <section class="promo">
-      <header class="promo__header">
-        <div class="promo__wraper">
-          <h2 class="promo__title">
-            Функциональное питание для котов
-          </h2>
-          <p class="promo__slogan">
-            Занялся собой? Займись котом!
-          </p>
-        </div>
-      </header>
+      <h2 class="promo__title">Функциональное питание для котов</h2>
+      <p class="promo__slogan">Занялся собой? Займись котом!</p>
       <img class="promo__img" src="#" alt="Кэт энерджи с курицей">
       <a class="button promo__link" href="form.html"> Подобрать программу </a>
     </section>
@@ -56,17 +47,17 @@
     <section class="programs">
       <h2 class="visually-hidden">Программы питания</h2>
       <ul class="programs__list">
-        <li class="programs__item program program--slim">
-          <h3 class="program__title">Похудение</h3>
-          <p class="program__content">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
+        <li class="programs__item programs__item--slim">
+          <h3 class="programs__title">Похудение</h3>
+          <p class="programs__content">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
             на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="program__link" href="catalog.html">Каталог slim</a>
+          <a class="programs__link" href="catalog.html">Каталог slim</a>
         </li>
-        <li class="programs__item program program--mass">
-          <h3 class="program__title">Набор массы</h3>
-          <p class="program__content">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+        <li class="programs__item programs__item--mass">
+          <h3 class="programs__title">Набор массы</h3>
+          <p class="programs__content">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы! </p>
-          <a class="program__link" href="catalog.html">Каталог slim</a>
+          <a class="programs__link" href="catalog.html">Каталог slim</a>
         </li>
       </ul>
     </section>
@@ -87,33 +78,36 @@
 
     <section class="contacts"></section>
 
-    <footer class="page-footer">
-      <div class="page-footer__wraper">
-        <a class="page-footer__logo logo-text">
-          <img class="logo__img" src="#" alt="Логотип Кэт энерджи">
-        </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="socoal__item">
-              <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
-            </li>
-            <li class="socoal__item">
-              <a class="social__link social__link--instagram" href="#">Инстаграм</a>
-            </li>
-            <li class="socoal__item">
-              <a class="social__link social__link--facebook" href="#">Фейсбук</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__img" src="#" alt="Логотип html академии">
-          </a>
-        </div>
-      </div>
-    </footer>
   </main>
+
+  <footer class="page-footer">
+    <!-- Здесь только текстовый логотип, без картинки, а блок лого в header с двумя svg -->
+    <a class="page-footer__logo logo">
+      <!-- Логотип текст -->
+    </a>
+
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="socoal__item">
+          <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+        </li>
+        <li class="socoal__item">
+          <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+        </li>
+        <li class="socoal__item">
+          <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <!-- Логотип html академии -->
+      </a>
+    </div>
+  </footer>
+
 </body>
 
 </html>
