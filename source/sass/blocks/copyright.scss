@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.copyright__link--text {
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.copyright__link--img path {
+  fill: #666666;
+}
