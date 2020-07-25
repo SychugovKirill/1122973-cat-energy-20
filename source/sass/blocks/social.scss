@@ -1,0 +1,29 @@
+.social {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 20px 70px;
+  padding-bottom: 15px;
+}
+
+.socoal__item {
+  margin-right: 35px;
+  margin-bottom: 5px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.social__link path {
+  fill: #666666;
+}
