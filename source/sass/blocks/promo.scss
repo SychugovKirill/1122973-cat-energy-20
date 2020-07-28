@@ -6,6 +6,8 @@
   padding: 0 20px;
   padding-top: 25px;
 
+  position: relative;
+
   text-align: center;
   font-family: $font-basic;
   color: #ffffff;
@@ -24,4 +26,31 @@
   line-height: 14px;
   text-transform: uppercase;
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding: 0 30px;
+    text-align: start;
+    color: #000000;
+    background-image: none;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 85px;
+    padding-right: 100px;
+  }
+
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 85px;
+  }
+
+  .promo__img {
+    width: 709px;
+    height: 609px;
+  }
 }

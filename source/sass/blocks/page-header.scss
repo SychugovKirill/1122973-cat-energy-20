@@ -4,3 +4,17 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    margin-bottom: 60px;
+    padding: 25px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include page-wrapper;
+  }
+}

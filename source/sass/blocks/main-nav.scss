@@ -57,3 +57,13 @@
     transform: rotate(-45deg);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
