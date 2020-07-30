@@ -2,6 +2,18 @@
   margin-bottom: 22px;
 }
 
-.page-main__advantages {
-  margin-bottom: 40px;
+@media (min-width: $tablet-width) {
+  .page-main__programs {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__promo {
+    margin-bottom: 80px;
+  }
+
+  .page-main__advantages {
+    margin-bottom: 10px;
+  }
 }

@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--index">
     <a class="page-header__logo logo">
       <?xml version="1.0" encoding="utf-8"?>
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -84,13 +84,13 @@
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">Главная</a>
+          <a class="site-list__link site-list__link--active site-list__link--index">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          <a class="site-list__link site-list__link--index" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Подбор программы</a>
+          <a class="site-list__link site-list__link--index" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -106,11 +106,9 @@
         <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Кэт энерджи с курицей">
         <a class="button promo__link" href="form.html"> Подобрать программу </a>
       </div>
-      <div class="promo__wrapper"></div>
-
     </section>
 
-    <section class="programs">
+    <section class="programs page-main__programs">
       <h2 class="visually-hidden">Программы питания</h2>
       <ul class="programs__list">
         <li class="programs__item">

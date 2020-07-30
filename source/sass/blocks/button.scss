@@ -4,16 +4,9 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 18px;
   font-family: $font-basic;
   font-weight: normal;
-}
-
-@media (min-width: $tablet-width) {
-  .button {
-    padding: 14px 26px;
-    font-size: 20px;
-    line-height: 0;
-  }
 }

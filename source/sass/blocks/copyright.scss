@@ -17,3 +17,9 @@
 .copyright__link--img path {
   fill: #666666;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    min-width: 163px;
+  }
+}
