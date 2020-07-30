@@ -1,7 +1,5 @@
-.catalog__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.catalog {
+  padding: 0 30px;
 }
 
 .catalog__title {
@@ -11,4 +9,37 @@
 
   border-bottom: 1px solid #ebebeb;
   margin: 0;
+}
+
+.catalog__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    border: none;
+    margin-bottom: 125px;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    @include page-wrapper;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 145px;
+  }
 }

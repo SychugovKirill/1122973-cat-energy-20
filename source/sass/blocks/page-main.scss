@@ -6,6 +6,10 @@
   .page-main__programs {
     margin-bottom: 25px;
   }
+
+  .page-main__catalog {
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -15,5 +19,9 @@
 
   .page-main__advantages {
     margin-bottom: 10px;
+  }
+
+  .page-main__catalog {
+    margin-bottom: 55px;
   }
 }

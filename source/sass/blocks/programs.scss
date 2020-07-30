@@ -52,7 +52,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .programs {
     padding: 0 30px;
   }
@@ -86,7 +85,7 @@
   }
 }
 
-@media (min-width: $desktop-width)  {
+@media (min-width: $desktop-width) {
   .programs {
     @include page-wrapper;
   }
@@ -102,7 +101,7 @@
     margin: 0;
     padding: 50px;
     padding-top: 75px;
-    overflow-wrap: break-word ;
+    overflow-wrap: anywhere;
   }
 
   .programs__title {
@@ -113,5 +112,4 @@
   .programs__content {
     margin-bottom: 25px;
   }
-
 }
