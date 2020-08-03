@@ -58,10 +58,13 @@
 
   .programs__item {
     margin: 0;
+    margin-bottom: 30px;
+    padding: 53px;
     padding-top: 75px;
-    padding-right: 295px;
-    padding-bottom: 53px;
-    padding-left: 53px;
+
+    &:nth-child(2) .programs__content {
+      max-width: 342px;
+    }
   }
 
   .programs__title {
@@ -77,6 +80,8 @@
     border: none;
     color: #000000;
     margin-bottom: 50px;
+    padding: 0;
+    max-width: 377px;
   }
 
   .programs__link {

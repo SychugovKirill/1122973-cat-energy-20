@@ -19,12 +19,7 @@
 
 .socoal__item {
   margin: 0 14px;
-  // margin-right: 34px;
   margin-bottom: 5px;
-
-  // &:last-child {
-  //   margin-right: 0;
-  // }
 }
 
 .social__link path {
@@ -34,10 +29,5 @@
 @media (min-width: $tablet-width) {
   .social {
     border: none;
-  }
-
-  .social__list {
-    padding: 0 40px;
-    padding-top: 5px;
   }
 }

@@ -87,6 +87,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
+    min-height: 696px;
     position: relative;
     padding: 0;
     padding-left: calc(50% - 610px);
@@ -100,7 +101,7 @@
       top: 0;
       left: unset;
 
-      background-image: url("../../img/index-background-mobile@1x.jpg");
+      background-image: url("../../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-color: #68b738;
       width: 50vw;
