@@ -5,7 +5,7 @@
   line-height: 20px;
   text-transform: uppercase;
   list-style: none;
-  // display: none;
+  display: none;
 
   padding: 0;
   margin: 0;
@@ -25,4 +25,47 @@
   text-decoration: none;
   color: #000000;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+    padding-top: 20px;
+
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+
+  .site-list__item {
+    border: none;
+    margin: 0;
+    margin-right: 34px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .site-list__link {
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .site-list__link--active {
+    border-bottom: 2px solid #68b738;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    padding-top: 10px;
+  }
+
+  .site-list__link--index {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
 }

@@ -3,13 +3,37 @@
   padding-top: 40px;
 
   text-align: center;
+  background-color: #f2f2f2;
 }
 
 .page-footer__logo {
+  margin-right: 20px;
   margin-bottom: 32px;
   display: inline-block;
 }
 
 .page-footer__social {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding: 55px 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    @include page-wrapper;
+  }
 }

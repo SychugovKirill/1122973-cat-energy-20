@@ -4,11 +4,9 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 18px;
   font-family: $font-basic;
   font-weight: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
