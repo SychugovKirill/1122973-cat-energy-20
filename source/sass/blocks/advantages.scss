@@ -42,6 +42,51 @@
     height: 60px;
     background-color: #68b738;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--structure {
+  &::after {
+    background-image: url(../../img/advantage-leaf@1x.png);
+  }
+}
+
+.advantages__item--form {
+  &::after {
+    background-image: url(../../img/advantage-powder@1x.png);
+  }
+}
+
+.advantages__item--meal {
+  &::after {
+    background-image: url(../../img/advantage-dining@1x.png);
+  }
+}
+
+.advantages__item--time {
+  &::after {
+    background-image: url(../../img/advantage-clock@1x.png);
+  }
+}
+
+.advantages__text {
+  margin: 0;
+  padding: 0;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -59,10 +104,11 @@
   .advantages__list {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 35% 35%;
-    row-gap: 40px;
+    grid-template-columns: 40% 40%;
+    row-gap: 100px;
     justify-content: space-between;
     padding-right: 80px;
+    margin-bottom: 55px;
   }
 
   .advantages__item {
@@ -77,6 +123,56 @@
       height: 80px;
       margin-bottom: 30px;
     }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .advantages__text {
+    position: relative;
+
+    br {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: unset;
+      top: -135px;
+      right: 15px;
+      z-index: -1;
+      font-size: 280px;
+      font-family: $font-basic;
+      line-height: 280px;
+      color: #f2f2f2;
+    }
+  }
+
+  .advantages__text--one {
+    &::before {
+      content: "1";
+    }
+  }
+
+  .advantages__text--two {
+    &::before {
+      content: "2";
+    }
+  }
+
+  .advantages__text--three {
+    &::before {
+      content: "3";
+    }
+  }
+
+  .advantages__text--four {
+    &::before {
+      content: "4";
+    }
   }
 }
 
@@ -88,8 +184,8 @@
 
   .advantages__list {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    row-gap: 40px;
+    grid-template-columns: 21% 21% 21% 21%;
+    row-gap: 100px;
     justify-content: space-between;
     padding: 0;
   }

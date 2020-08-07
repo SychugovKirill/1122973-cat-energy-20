@@ -4,13 +4,16 @@
   flex-direction: column;
   align-items: center;
   padding: 12px 20px;
-  padding-bottom: 16px;
+  padding-bottom: 0px;
+}
+
+.page-header__logo {
+  margin-bottom: 17px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
-    margin-bottom: 30px;
     padding: 25px 30px;
   }
 }
