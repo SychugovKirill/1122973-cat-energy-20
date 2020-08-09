@@ -58,25 +58,25 @@
 
 .advantages__item--structure {
   &::after {
-    background-image: url(../../img/advantage-leaf@1x.png);
+    background-image: url("../../img/advantage-leaf@1x.png");
   }
 }
 
 .advantages__item--form {
   &::after {
-    background-image: url(../../img/advantage-powder@1x.png);
+    background-image: url("../../img/advantage-powder@1x.png");
   }
 }
 
 .advantages__item--meal {
   &::after {
-    background-image: url(../../img/advantage-dining@1x.png);
+    background-image: url("../../img/advantage-dining@1x.png");
   }
 }
 
 .advantages__item--time {
   &::after {
-    background-image: url(../../img/advantage-clock@1x.png);
+    background-image: url("../../img/advantage-clock@1x.png");
   }
 }
 
@@ -98,6 +98,7 @@
   }
 
   .advantages__title {
+    @include title;
     margin-bottom: 30px;
   }
 
