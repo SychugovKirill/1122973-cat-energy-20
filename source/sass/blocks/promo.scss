@@ -58,6 +58,7 @@
   }
 
   .promo__title {
+    @include title;
     padding-left: 85px;
     padding-right: 100px;
   }
