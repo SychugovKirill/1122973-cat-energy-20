@@ -59,24 +59,40 @@
 .advantages__item--structure {
   &::after {
     background-image: url("../../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/advantage-leaf@2x.png");
+    }
   }
 }
 
 .advantages__item--form {
   &::after {
     background-image: url("../../img/advantage-powder@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/advantage-power@2x.png");
+    }
   }
 }
 
 .advantages__item--meal {
   &::after {
     background-image: url("../../img/advantage-dining@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/advantage-dining@2x.png");
+    }
   }
 }
 
 .advantages__item--time {
   &::after {
     background-image: url("../../img/advantage-clock@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/advantage-clock@2x.png");
+    }
   }
 }
 
