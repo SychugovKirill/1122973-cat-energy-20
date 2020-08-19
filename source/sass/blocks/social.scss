@@ -17,17 +17,61 @@
   padding-bottom: 15px;
 }
 
-.socoal__item {
+.social__item {
   margin: 0 14px;
   margin-bottom: 5px;
 }
 
-.social__link path {
+.social__link {
+  display: block;
+}
+
+.social__img {
   fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: rgba(104, 183, 56, 0.3);
+  }
+
+  &--vkontakte {
+    width: 23px;
+    height: 16px;
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--facebook {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .social {
     border: none;
+  }
+
+  .social__img {
+    &--vkontakte {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 28px;
+      height: 33px;
+    }
   }
 }
