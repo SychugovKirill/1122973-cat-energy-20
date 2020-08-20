@@ -14,8 +14,20 @@
   color: #444444;
 }
 
-.copyright__link--img path {
-  fill: #666666;
+.copyright__link--img {
+  line-height: 0;
+
+  & path {
+    fill: #666666;
+  }
+
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:active path {
+    fill: rgba(104, 183, 56, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
