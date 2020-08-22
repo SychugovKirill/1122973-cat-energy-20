@@ -32,10 +32,13 @@ const styles = () => {
 
 exports.styles = styles;
 
+// html
+
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(posthtml())
     .pipe(gulp.dest("build"))
+    .pipe(sync.stream());
 }
 
 exports.html = html;
@@ -94,9 +97,7 @@ const copy = () => {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/css/**",
     "source/*ico",
-    "source/*.html"
   ], {
     base: "source"
   })
@@ -126,6 +127,8 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("build/css/*.css").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series("html"));
   gulp.watch("build/*.html").on("change", sync.reload);
 }
 
