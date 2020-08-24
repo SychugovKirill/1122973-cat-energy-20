@@ -91,7 +91,7 @@
   color: #000000;
   padding-right: 42px;
 
-  &::before {
+  &::after {
     content: "";
     background-image: url("../../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
@@ -103,21 +103,13 @@
   }
 
   &:hover {
-    &::before {
+    &::after {
       background-image: url("../../img/icon-right-arrow-verylong.svg");
     }
   }
 
   &:active {
-    color: rgba(#000000, 0.3);
-
-    &::before {
-      background-color: rgba(#000000, 0.3);
-    }
-
-    &::after {
-      border-left-color: rgba(#000000, 0.3);
-    }
+    opacity: 0.3;
   }
 }
 

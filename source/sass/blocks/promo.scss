@@ -32,10 +32,8 @@
 
 .promo__title {
   margin: 0;
-  font-size: 36px;
-  line-height: 36px;
   margin-bottom: 25px;
-  font-weight: normal;
+  color: #ffffff;
 }
 
 .promo__slogan {
@@ -62,9 +60,9 @@
   }
 
   .promo__title {
-    @include title;
     padding-left: 85px;
     padding-right: 100px;
+    color: #000000;
   }
 
   .promo__slogan {

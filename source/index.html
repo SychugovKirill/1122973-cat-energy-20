@@ -100,10 +100,53 @@
     </section>
 
     <section class="example">
+      <h2 class="example__title title">Живой пример</h2>
+      <p class="example__text">
+        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+      </p>
+      <ul class="example__list">
+        <li class="example__item">
+          <b class="example__number">5 кг</b>
+          <p class="example__description">снижение веса</p>
+        </li>
+        <li class="example__item">
+          <b class="example__number">60 дней</b>
+          <p class="example__description">затрачено времени</p>
+        </li>
+        <li class="example__item">
+          <p class="example__price-food">Затраты на питание:</p>
+          <b class="example__price-food">15 000 руб. </b>
+        </li>
+      </ul>
+      <div class="example__slider">
+        <div class="example__img example__img--before"></div>
+        <div class="example__img example__img--after"></div>
+      </div>
+      <label class="example__label" for="slider-button">
+        Было
+        <input class="example__button" type="checkbox" id="slider-button" name="slider-cat">
+        Стало
+      </label>
     </section>
 
-    <section class="contacts"></section>
+    <section class="contacts">
+      <div class="contacts__inner">
+        <b class="contacts__text">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1260px)"
+          srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
+        <source media="(min-width: 1260px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-mobile@2x.png 2x">
+        <img class="contacts__img" src="img/bg-map-mobile@1x.png 1x" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта">
+      </picture>
+    </section>
   </main>
 
   <footer class="page-footer">

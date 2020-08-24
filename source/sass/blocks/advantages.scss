@@ -5,11 +5,6 @@
 }
 
 .advantages__title {
-  font-family: $font-basic;
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 40px;
-
   margin: 0;
   margin-bottom: 40px;
 }
@@ -37,27 +32,18 @@
 
   &::before {
     content: "";
-    margin-right: 20px;
     min-width: 60px;
-    height: 60px;
-    background-color: #68b738;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    width: 60px;
     height: 60px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #68b738;
+    margin-right: 20px;
   }
 }
 
 .advantages__item--structure {
-  &::after {
+  &::before {
     background-image: url("../../img/advantage-leaf@1x.png");
 
     @media (min-resolution: 2dppx) {
@@ -67,17 +53,17 @@
 }
 
 .advantages__item--form {
-  &::after {
+  &::before {
     background-image: url("../../img/advantage-powder@1x.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/advantage-power@2x.png");
+      background-image: url("../../img/advantage-powder@2x.png");
     }
   }
 }
 
 .advantages__item--meal {
-  &::after {
+  &::before {
     background-image: url("../../img/advantage-dining@1x.png");
 
     @media (min-resolution: 2dppx) {
@@ -87,7 +73,7 @@
 }
 
 .advantages__item--time {
-  &::after {
+  &::before {
     background-image: url("../../img/advantage-clock@1x.png");
 
     @media (min-resolution: 2dppx) {
@@ -114,7 +100,6 @@
   }
 
   .advantages__title {
-    @include title;
     margin-bottom: 30px;
   }
 
