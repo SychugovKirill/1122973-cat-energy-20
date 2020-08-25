@@ -1,5 +1,105 @@
+.example {
+  padding: 0 20px;
+  padding-top: 30px;
+  background-color: #eaeaea;
+}
 
-// .example {
-//   padding: 0 20px;
-//   background-color: #eaeaea;
-// }
+.example__title {
+  margin-bottom: 35px;
+}
+
+.example__text {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 25px;
+}
+
+.example__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.example__item {
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 30px;
+
+  &:first-child {
+    margin-right: auto;
+  }
+
+  &:last-child {
+    flex-shrink: 1;
+    display: flex;
+    border: none;
+    margin: 0 auto;
+  }
+}
+
+.example__number {
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.example__description {
+  margin: 0;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.example__price-food {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.example__slider {
+  height: 75vw;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.example__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.example__img--before {
+  background-image: url(../../img/before-mobile@1x.png);
+  background-repeat: no-repeat;
+}
+
+.example__img--after {
+  display: none;
+  background-image: url(../../img/after-mobile@1x.png);
+  background-repeat: no-repeat;
+}
+
+.example-control {
+  display: block;
+  text-align: center;
+}
+
+.example__label {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
