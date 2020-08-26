@@ -2,13 +2,25 @@
   margin-bottom: 22px;
 }
 
+// Catalog
+
+.page-main__catalog {
+  margin-bottom: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__programs {
     margin-bottom: 25px;
   }
 
+  //Catalog
+
   .page-main__catalog {
     margin-bottom: 50px;
+  }
+
+  .page-main__additional-goods {
+    margin-bottom: 70px;
   }
 }
 
