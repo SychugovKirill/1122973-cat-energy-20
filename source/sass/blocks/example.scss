@@ -1,5 +1,201 @@
+.example {
+  padding: 0 20px;
+  padding-top: 30px;
+  background-color: #eaeaea;
+}
 
-// .example {
-//   padding: 0 20px;
-//   background-color: #eaeaea;
-// }
+.example__title {
+  margin-bottom: 35px;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 25px;
+}
+
+.example__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.example__item {
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 30px;
+
+  &:first-child {
+    margin-right: auto;
+  }
+
+  &:last-child {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    margin: 0;
+  }
+}
+
+.example__number {
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.example__description {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.example__price-food {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.example__slider {
+  min-height: 232px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.example__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.example__img--before {
+  background-image: url("../../img/before-mobile@1x.png");
+}
+
+.example__img--after {
+  display: none;
+  background-image: url("../../img/after-mobile@1x.png");
+}
+
+.example-control {
+  display: block;
+  text-align: center;
+}
+
+.example__label {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding: 0 30px;
+    background-color: #ffffff;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__item {
+    margin: 0;
+    margin-right: auto;
+
+    &:first-child {
+      margin-right: 45px;
+    }
+
+    &:last-child {
+      width: auto;
+      margin: 0;
+    }
+  }
+
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__price-food {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__box--slid {
+    background-color: #eaeaea;
+    margin: 0 -30px;
+  }
+
+  .example__slider {
+    display: flex;
+    justify-content: center;
+  }
+
+  .example__img {
+    position: static;
+    background-size: cover;
+    min-height: 620px;
+    width: 354px;
+  }
+
+  .example__img--before {
+    background-image: url("../../img/before-tablet@1x.png");
+    background-position: 10%;
+  }
+
+  .example__img--after {
+    background-image: url("../../img/after-tablet@1x.png");
+    background-position: 86%;
+    display: block;
+  }
+
+  .example-control {
+    margin: 0 -30px;
+    background-color: #eaeaea;
+  }
+
+  .example__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    @include page-wrapper;
+    display: flex;
+    background-color: #f2f2f2;
+  }
+
+  .example__box--text {
+    width: 40%;
+  }
+
+  .example__box--slid {
+    min-width: 690px;
+  }
+}

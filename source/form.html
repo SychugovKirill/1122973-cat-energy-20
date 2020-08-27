@@ -36,14 +36,14 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title title">Подбор программы</h1>
+    <h1 class="visually-hidden">Форма заказа</h1>
     <section class="order">
-      <h2 class="visually-hidden">Форма заказа</h2>
+      <h2 class="order__title title">Подбор программы</h2>
       <form class="order__form form" action="#" method="post">
         <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
         <div class="form__wrap">
-          <div class="form__box">
+          <fieldset class="form__box">
             <div class="form__group">
               <label class="form__label" for="name-cat">Имя:*</label>
               <input class="form__field" type="text" id="name-cat" name="name" required placeholder="Барсик">
@@ -56,7 +56,7 @@
               <label class="form__label" for="age-cat">Возраст (лет):</label>
               <input class="form__field" type="text" id="age-cat" name="name" placeholder="7">
             </div>
-          </div>
+          </fieldset>
 
           <fieldset class="form__box">
             <div class="form__group">
@@ -88,14 +88,14 @@
 
         <fieldset class="form__box">
           <legend class="form__title">Комментарий</legend>
-          <textarea name="text" id="text" cols="30" rows="10"
+          <textarea class="form__comment" name="text" id="text" cols="30" rows="10"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form__box">
           <legend class="form__title">Дополнительно</legend>
           <div class="form__group">
-            <input class="form__checkbox" type="checkbox" id="sweetener" name="sweet">
+            <input class="form__checkbox" type="checkbox" id="sweetener" name="sweet" checked>
             <label class="form__label" for="sweetener">Сахарозаменитель</label>
           </div>
           <div class="form__group">
