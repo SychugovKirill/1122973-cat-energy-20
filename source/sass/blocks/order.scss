@@ -2,13 +2,9 @@
   padding: 0 20px;
 }
 
-.order__form {}
-
 .order__title {
   margin-bottom: 35px;
 }
-
-.form {}
 
 .form__text {
   font-size: 14px;
@@ -18,15 +14,11 @@
   margin-bottom: 40px;
 }
 
-.form__wrap {}
-
 .form__box {
   border: none;
   margin: 0;
   padding: 0;
 }
-
-.form__group {}
 
 .form__label {
   font-size: 16px;
@@ -51,7 +43,7 @@
   line-height: 26px;
 }
 
-.form__text {
+.form__comment {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -62,9 +54,3 @@
 .form__checkbox {
   color: #000000;
 }
-
-.form__button {}
-
-.button {}
-
-.form__legend {}
