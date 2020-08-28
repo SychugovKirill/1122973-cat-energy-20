@@ -13,6 +13,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
   margin-bottom: 25px;
 }
 
@@ -114,6 +115,7 @@
   .example__text {
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
   }
 
   .example__item {
@@ -192,7 +194,8 @@
   }
 
   .example__box--text {
-    width: 40%;
+    width: 439px;
+    margin-right: auto;
   }
 
   .example__box--slid {
