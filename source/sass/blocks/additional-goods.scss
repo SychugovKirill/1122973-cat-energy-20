@@ -140,6 +140,10 @@
 
   .additional-goods__item {
     display: flex;
+    align-items: center;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
 
     &:first-child {
       border-top: 1px solid #cdcdcd;
@@ -148,6 +152,24 @@
     &:last-child {
       border-bottom: 1px solid #cdcdcd;
     }
+  }
+
+  .additional-goods__link {
+    width: 162px;
+    margin-right: 160px;
+  }
+
+  .additional-goods__parameter {
+    margin-right: auto;
+  }
+
+  .additional-goods__volume {
+    width: 133px;
+    margin-right: 112px;
+  }
+
+  .additional-goods__price {
+    margin: 0;
   }
 
   .additional-goods__button {
@@ -167,5 +189,9 @@
 
   .additional-goods__text {
     text-align: center;
+  }
+
+  .additional-goods__button {
+    width: 244px;
   }
 }
