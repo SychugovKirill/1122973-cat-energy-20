@@ -16,7 +16,9 @@
 }
 
 .form__wrap {
+  padding: 0;
   margin-bottom: 25px;
+  border: none;
 }
 
 .form__box {
@@ -129,6 +131,12 @@
 
 .form__field--contact {
   padding-right: 35px;
+  appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
 }
 
 .field__wrap {
@@ -214,7 +222,7 @@
 
 @media (min-width: $tablet-width) {
   .order {
-    padding: 0 70px;
+    padding: 0;
   }
 
   .order__title {
@@ -230,6 +238,7 @@
 
   .form__wrap {
     margin-bottom: 65px;
+    padding: 0 70px;
   }
 
   .form__box {
@@ -321,6 +330,9 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 75px;
+    padding: 0 40px;
+    margin-left: -40px;
+    background-color: #ffffff;
   }
 
   .form__comment {
@@ -350,10 +362,25 @@
 
 @media (min-width: $desktop-width) {
   .order {
+    padding: 0;
+  }
+
+  .order__title {
+    margin-left: calc(50% - 610px);
+    margin-right: calc(50% - 610px);
+  }
+
+  .form__text {
+    margin-left: calc(50% - 610px);
+    margin-right: calc(50% - 610px);
+  }
+
+  .form__wrap {
     @include page-wrapper;
   }
 
   .form__wrap--user {
+    @include page-wrapper;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
@@ -380,6 +407,11 @@
   .form__group--checkbox {
     flex-basis: 25%;
     margin: 0;
+  }
+
+  .form__title {
+    margin-left: -40px;
+    padding: 0 40px;
   }
 
   .form__button {
