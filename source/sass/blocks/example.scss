@@ -136,23 +136,40 @@
 @media (min-width: $tablet-width) {
   .example {
     padding: 0 30px;
+    padding-top: 42px;
     background-color: #ffffff;
+  }
+
+  .example__title {
+    margin-bottom: 64px;
   }
 
   .example__text {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
+    margin-right: 10px;
+    margin-bottom: 53px;
+    max-width: max-content;
+  }
+
+  .example__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .example__list {
+    margin: 0;
+    margin-right: auto;
   }
 
   .example__item {
     width: 162px;
-    height: 77px;
+    height: 72px;
     margin: 0;
-    margin-right: auto;
 
     &:first-child {
-      margin-right: 45px;
+      margin-right: 42px;
     }
   }
 
@@ -167,52 +184,68 @@
     width: auto;
     background-color: #ffffff;
     padding: 0 8px;
+    top: 90%;
   }
 
   .example__price-food {
     font-size: 20px;
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .example__price {
+    margin-bottom: 9px;
   }
 
   .example__box--slid {
     background-color: #eaeaea;
     margin: 0 -30px;
     position: relative;
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 220px;
+      background-color: #ffffff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
   }
 
   .example__slider {
     display: flex;
+    justify-content: center;
     margin: 0;
+    margin-bottom: 7px;
   }
 
   .example__inner--before {
-    flex-basis: 50%;
+    max-width: 384px;
   }
 
   .example__inner--after {
-    flex-basis: 50%;
+    max-width: 384px;
   }
 
   .example__img {
-    height: 536px;
+    height: 520px;
+    position: relative;
+    z-index: 10;
   }
 
   .example__img--before {
-    object-position: 25px;
+    object-position: 45px;
   }
 
   .example__img--after {
     display: block;
-    object-position: -380px;
-  }
-
-  .example__control {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 25px;
-    display: flex;
-    align-items: center;
+    object-position: -340px;
   }
 
   .example__label {
@@ -232,8 +265,8 @@
       background-color: #ffffff;
       border: 1px solid #cdcdcd;
       position: absolute;
-      top: -14px;
-      left: 199px;
+      top: 2px;
+      left: 198px;
     }
 
     &::after {
@@ -243,8 +276,8 @@
       background-color: #68b738;
       border-radius: 50%;
       position: absolute;
-      top: -1px;
-      left: 212px;
+      top: -2px;
+      left: 211px;
     }
   }
 
@@ -263,7 +296,7 @@
     &::before {
       content: "";
       width: 100%;
-      height: 190px;
+      height: 197px;
       background-color: #ffffff;
       position: absolute;
       left: 0;
@@ -277,8 +310,8 @@
   }
 
   .example__box--text {
-    width: 439px;
-    padding-top: 50px;
+    margin: 0;
+    padding-top: 62px;
     padding-left: calc(50% - 610px);
     background-color: #f2f2f2;
   }
@@ -287,25 +320,46 @@
     background-color: #eaeaea;
     position: relative;
     margin: 0;
+    padding: 0;
     padding-right: calc(50% - 610px);
+    padding-top: 8px;
+
+    &::before {
+      content: none;
+    }
   }
 
   .example__title {
-    margin-bottom: 150px;
+    margin-bottom: 146px;
     position: relative;
     z-index: 10;
   }
 
   .example__text {
     margin-bottom: 70px;
+    max-width: 435px;
+  }
+
+  .example__wrap {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .example__list {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
   }
 
   .example__description {
     background-color: #f2f2f2;
+  }
+
+  .example__price-food {
+    display: block;
+  }
+
+  .example__price {
+    margin: 0;
+    margin-right: 64px;
   }
 
   .example__slider {
@@ -318,28 +372,41 @@
   }
 
   .example__inner--before {
-    flex-basis: 56%;
+    flex-basis: 53%;
     background-color: #f2f2f2;
   }
 
   .example__inner--after {
-    flex-basis: 44%;
+    flex-basis: 47%;
   }
 
   .example__img--before {
-    object-position: -35px;
+    object-position: -41px;
     z-index: 10;
     position: relative;
   }
 
   .example__img--after {
-    object-position: -375px;
+    object-position: -365px;
     z-index: 10;
     position: relative;
   }
 
+  .example__label {
+    &::before {
+      content: "";
+      left: 195px;
+    }
+
+    &::after {
+      content: "";
+      left: 208px;
+    }
+  }
+
   .example__control {
+    position: absolute;
     left: 40px;
-    transform: translateX(0);
+    bottom: 13px;
   }
 }

@@ -1,5 +1,18 @@
 .contacts {
   line-height: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 56px;
+    height: 52px;
+    background-image: url("../../img/map-pin.png");
+    background-size: cover;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .contacts__inner {
@@ -8,6 +21,10 @@
   display: flex;
   align-items: center;
   background-color: #f2f2f2;
+}
+
+.contacts__inner--index {
+  background-color: #ffffff;
 }
 
 .contacts__text {
@@ -39,17 +56,30 @@
 @media (min-width: $tablet-width) {
   .contacts {
     background-color: #f2f2f2;
+
+    &::before {
+      content: "";
+      width: 113px;
+      height: 106px;
+      background-image: url("../../img/map-pin.png");
+      background-size: cover;
+      position: absolute;
+      top: 58%;
+      left: 49%;
+      transform: translateX(-50%);
+    }
   }
 
   .contacts__inner {
     padding: 0 70px;
     padding-top: 65px;
-    padding-bottom: 50px;
+    padding-bottom: 57px;
+    align-items: inherit;
   }
 
   .contacts__text {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 26px;
     width: 170px;
   }
 
@@ -58,6 +88,11 @@
     line-height: 20px;
     width: 160px;
     text-align: right;
+  }
+
+  .contacts__street {
+    display: inline-block;
+    margin-bottom: 20px;
   }
 
   .contacts__img {

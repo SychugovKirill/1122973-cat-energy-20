@@ -5,18 +5,16 @@
 // Catalog
 
 .page-main__catalog {
-  margin-bottom: 30px;
-}
-
-// Form
-
-.page-main__order {
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__programs {
     margin-bottom: 25px;
+  }
+
+  .page-main__promo {
+    margin-bottom: 0;
   }
 
   //Catalog
@@ -33,6 +31,10 @@
 @media (min-width: $desktop-width) {
   .page-main__promo {
     margin-bottom: 80px;
+  }
+
+  .page-main__programs {
+    margin-bottom: 51px;
   }
 
   .page-main__advantages {

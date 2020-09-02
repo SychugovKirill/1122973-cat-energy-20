@@ -1,26 +1,34 @@
 .additional-goods {
   padding: 0 20px;
+  padding-bottom: 35px;
 }
 
 .additional-goods__title {
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
-  padding-bottom: 35px;
+  background-color: #ffffff;
+  padding: 0;
+  padding-right: 20px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 33px;
+  display: inline-block;
 }
 
 .additional-goods__list {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .additional-goods__item {
   border-bottom: 1px solid #cdcdcd;
-  padding: 15px 0;
+  padding: 13px 0;
+  padding-bottom: 17px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 
   &:first-child {
     border-top: 1px solid #cdcdcd;
@@ -33,6 +41,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #222222;
+  margin-bottom: 15px;
 }
 
 .additional-goods__parameter {
@@ -42,11 +51,17 @@
   color: #444444;
   display: flex;
   margin: 0;
+  margin-bottom: 14px;
+}
+
+.additional-goods__volume {
+  margin-right: auto;
 }
 
 .additional-goods__button {
   display: block;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .additional-goods__gift {
@@ -54,11 +69,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 289px;
-  padding-bottom: 45px;
+  min-height: 182px;
+  padding-top: 64px;
+  padding-bottom: 42px;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 80px;
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 58px 60px;
+    display: block;
+  }
 }
 
 .additional-goods__text {

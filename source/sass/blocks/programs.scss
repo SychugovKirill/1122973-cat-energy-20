@@ -124,10 +124,7 @@
     margin-bottom: 30px;
     padding: 53px;
     padding-top: 75px;
-
-    &:nth-child(2) .programs__content {
-      max-width: 342px;
-    }
+    padding-bottom: 57px;
   }
 
   .programs__title {
@@ -135,7 +132,7 @@
     font-size: 36px;
     line-height: 36px;
 
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     padding: 0;
 
     &::before {
@@ -145,9 +142,9 @@
       background-color: #68b738;
       border-radius: 50%;
       position: absolute;
-      right: 0;
+      right: 9px;
       left: unset;
-      top: 0;
+      top: 17px;
     }
   }
 
@@ -160,8 +157,8 @@
       height: 192px;
       position: absolute;
       left: unset;
-      right: 20px;
-      top: -8px;
+      right: 39px;
+      top: 6px;
     }
   }
 
@@ -174,8 +171,8 @@
       height: 112px;
       position: absolute;
       left: unset;
-      right: -20px;
-      top: 35px;
+      right: -25px;
+      top: 61px;
     }
   }
 
@@ -184,21 +181,26 @@
     line-height: 24px;
     border: none;
     color: #000000;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
     padding: 0;
     max-width: 377px;
+  }
+
+  .programs__content--mass {
+    max-width: 342px;
   }
 
   .programs__link {
     font-size: 20px;
     line-height: 30px;
+    padding-right: 57px;
 
     &::before {
       top: 15px;
     }
 
     &::after {
-      top: 11px;
+      top: 15px;
     }
   }
 }
@@ -219,6 +221,7 @@
     margin: 0;
     padding: 50px;
     padding-top: 75px;
+    padding-bottom: 59px;
     overflow-wrap: anywhere;
   }
 
@@ -233,8 +236,8 @@
       background-color: #68b738;
       border-radius: 50%;
       position: absolute;
-      left: 0;
-      top: -30px;
+      left: 3px;
+      top: -29px;
     }
   }
 
@@ -246,7 +249,7 @@
       width: 70px;
       height: 97px;
       position: absolute;
-      left: 9px;
+      left: 18px;
       top: -35px;
     }
   }
@@ -259,22 +262,17 @@
       width: 134px;
       height: 56px;
       position: absolute;
-      left: -13px;
-      top: -10px;
+      left: -16px;
+      top: -9px;
     }
   }
 
   .programs__content {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
+    max-width: inherit;
   }
 
   .programs__link {
-    &::before {
-      top: 14px;
-    }
-
-    &::after {
-      top: 10px;
-    }
+    padding-right: 60px;
   }
 }

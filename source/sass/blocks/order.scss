@@ -1,9 +1,11 @@
 .order {
   padding: 0 20px;
+  padding-bottom: 30px;
 }
 
 .order__title {
   margin-bottom: 35px;
+  padding: 0 20px;
 }
 
 .form__text {
@@ -11,14 +13,23 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   width: 230px;
 }
 
 .form__wrap {
   padding: 0;
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 26px;
   border: none;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.form__wrap--user {
+  margin-bottom: 27px;
 }
 
 .form__box {
@@ -36,7 +47,11 @@
 }
 
 .form__box--user {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
+}
+
+.form__box--button {
+  padding-top: 7px;
 }
 
 .form__group {
@@ -58,6 +73,10 @@
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.form__label--contact {
+  margin-right: 10px;
 }
 
 .form__label--radio {
@@ -123,7 +142,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  padding: 13px 15px;
+  padding: 13px 12px;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
   flex-grow: 1;
@@ -131,6 +150,7 @@
 
 .form__field--contact {
   padding-right: 35px;
+  padding-left: 15px;
   appearance: textfield;
 }
 
@@ -182,8 +202,10 @@ input::-webkit-inner-spin-button {
   font-weight: normal;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
+  padding-right: 20px;
   position: relative;
+  background-color: #ffffff;
 }
 
 .form__comment {
@@ -196,7 +218,7 @@ input::-webkit-inner-spin-button {
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
   resize: none;
-  padding: 15px;
+  padding: 13px;
 }
 
 .form__checkbox {
@@ -209,7 +231,8 @@ input::-webkit-inner-spin-button {
   border: none;
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  padding: 10px 44px;
+  margin-bottom: 22px;
 }
 
 .form__legend {

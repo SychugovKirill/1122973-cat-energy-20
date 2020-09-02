@@ -63,6 +63,7 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     width: auto;
+    padding-top: 10px;
   }
 
   .main-nav__toggle {
@@ -71,5 +72,12 @@
 
   .main-nav__list {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+
+    padding-top: 0;
   }
 }
