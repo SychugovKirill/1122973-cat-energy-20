@@ -12,7 +12,7 @@
 .programs__item {
   background-color: #f2f2f2;
   padding: 30px 20px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   margin-bottom: 20px;
 
   &:last-child {
@@ -38,7 +38,7 @@
     background-color: #68b738;
     border-radius: 50%;
     position: absolute;
-    left: 0;
+    left: 2px;
     top: -5px;
   }
 }
@@ -64,7 +64,7 @@
     width: 67px;
     height: 28px;
     position: absolute;
-    left: -13px;
+    left: -7px;
     top: 5px;
   }
 }
@@ -77,8 +77,8 @@
   color: #444444;
   border-bottom: 1px solid #d9d9d9;
   margin: 0;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 22px;
+  margin-bottom: 15px;
 }
 
 .programs__link {
@@ -89,7 +89,7 @@
   font-weight: normal;
   line-height: 16px;
   color: #000000;
-  padding-right: 42px;
+  padding-right: 47px;
 
   &::after {
     content: "";
@@ -97,7 +97,8 @@
     background-repeat: no-repeat;
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 32px;
     height: 10px;
   }

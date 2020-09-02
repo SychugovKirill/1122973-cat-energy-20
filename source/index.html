@@ -100,39 +100,73 @@
     </section>
 
     <section class="example">
-      <h2 class="example__title title">Живой пример</h2>
-      <p class="example__text">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <ul class="example__list">
-        <li class="example__item">
-          <b class="example__number">5 кг</b>
-          <p class="example__description">снижение веса</p>
-        </li>
-        <li class="example__item">
-          <b class="example__number">60 дней</b>
-          <p class="example__description">затрачено времени</p>
-        </li>
-        <li class="example__item">
-          <p class="example__price-food">Затраты на питание:</p>
-          <b class="example__price-food">15 000 руб. </b>
-        </li>
-      </ul>
-      <div class="example__slider">
-        <div class="example__img example__img--before"></div>
-        <div class="example__img example__img--after"></div>
+      <div class="example__box example__box--text">
+        <h2 class="example__title title">Живой пример</h2>
+        <p class="example__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <ul class="example__list">
+          <li class="example__item">
+            <b class="example__number">5 кг</b>
+            <p class="example__description">Снижение веса</p>
+          </li>
+          <li class="example__item">
+            <b class="example__number">60 дней</b>
+            <p class="example__description">Затрачено времени</p>
+          </li>
+        </ul>
+        <p class="example__price-food">Затраты на питание: <span class="example__price">15 000 руб.</span></p>
+
       </div>
-      <label class="example__label" for="slider-button">
-        Было
-        <input class="example__button" type="checkbox" id="slider-button" name="slider-cat">
-        Стало
-      </label>
+
+      <div class="example__box example__box--slid">
+        <div class="example__slider">
+          <div class="example__inner example__inner--before" >
+            <picture>
+              <source type="image/webp" media="(min-width: 1260px)"
+                srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1260px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-mobile@2x.png 2x">
+              <img class="example__img example__img--before" id="cat-before" src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" alt="До">
+            </picture>
+
+          </div>
+          <div class="example__inner example__inner--after">
+            <picture>
+              <source type="image/webp" media="(min-width: 1260px)"
+                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1260px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-mobile@2x.png 2x">
+              <img class="example__img example__img--after" src="img/after-mobile@1x.png"
+                srcset="img/after-mobile@2x.png 2x" alt="После">
+            </picture>
+          </div>
+        </div>
+        <div class="example__control">
+          <span class="example__text-control">Было</span>
+          <input class="example__button visually-hidden" type="checkbox" id="slider-button" name="slider-cat">
+          <label class="example__label" for="slider-button"></label>
+
+          <span class="example__text-control">Стало</span>
+        </div>
+
+      </div>
     </section>
 
     <section class="contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
       <div class="contacts__inner">
-        <b class="contacts__text">Приглашаем к сотрудничеству дилеров!</b>
+        <b class="contacts__text">Приглашаем <br> к сотрудничеству дилеров!</b>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <picture>
