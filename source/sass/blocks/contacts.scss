@@ -72,9 +72,13 @@
 
   .contacts__inner {
     padding: 0 70px;
-    padding-top: 65px;
+    padding-top: 70px;
     padding-bottom: 57px;
     align-items: inherit;
+  }
+
+  .contacts__inner--form {
+    padding-top: 65px;
   }
 
   .contacts__text {
@@ -102,7 +106,13 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    position: relative;
+
+    &::before {
+      content: "";
+      top: 33%;
+      left: 65%;
+      transform: translateX(-46%);
+    }
   }
 
   .contacts__inner {
@@ -110,10 +120,16 @@
     width: 570px;
     height: 200px;
     box-sizing: border-box;
-    padding: 60px 80px;
+    padding: 60px 84px;
+    padding-top: 63px;
+    padding-left: 76px;
     position: absolute;
     left: calc(50% - 610px);
-    top: 50%;
+    top: 49%;
     transform: translateY(-50%);
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 }

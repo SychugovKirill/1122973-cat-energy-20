@@ -18,24 +18,27 @@
 @media (min-width: $tablet-width) {
   .catalog {
     padding: 0 30px;
+    padding-top: 35px;
   }
 
   .catalog__title {
     border: none;
-    margin-bottom: 125px;
+    padding: 0;
+    margin-bottom: 164px;
   }
 
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 140px;
+    row-gap: 141px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
     @include page-wrapper;
+    padding-top: 45px;
   }
 
   .catalog__list {

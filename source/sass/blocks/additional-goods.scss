@@ -106,17 +106,19 @@
   .additional-goods__title {
     font-size: 36px;
     line-height: 36px;
-    padding: 0 40px;
+    padding: 0 37px;
+    margin-bottom: 79px;
     background-color: #ffffff;
     display: inline-block;
   }
 
   .additional-goods__list {
     border: 1px solid #cdcdcd;
+    margin-bottom: 70px;
   }
 
   .additional-goods__item {
-    padding: 30px 40px;
+    padding: 26px 38px;
     margin: 0;
 
     &:first-child {
@@ -128,24 +130,37 @@
     }
   }
 
+  .additional-goods__inner {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 22px;
+  }
+
   .additional-goods__link {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+    margin-right: auto;
   }
 
   .additional-goods__parameter {
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
+  }
+
+  .additional-goods__price {
+    margin: 0;
+    margin-left: 50px;
   }
 
   .additional-goods__gift {
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
     min-height: 200px;
-    padding: 0;
     align-items: center;
-    justify-content: flex-end;
-    padding-right: 125px;
-    padding-left: 80px;
+    flex-direction: inherit;
+    justify-content: space-between;
+    padding: 0 120px 0 89px;
   }
 
   .additional-goods__text {
@@ -156,6 +171,10 @@
 @media (min-width: $desktop-width) {
   .additional-goods {
     @include page-wrapper;
+  }
+
+  .additional-goods__title {
+    margin-left: -37px;
   }
 
   .additional-goods__box {
@@ -170,10 +189,11 @@
 
   .additional-goods__item {
     display: flex;
+    flex-direction: inherit;
     align-items: center;
     padding: 0;
-    padding-top: 15px;
-    padding-bottom: 17px;
+    padding-top: 17px;
+    padding-bottom: 15px;
 
     &:first-child {
       border-top: 1px solid #cdcdcd;
@@ -184,9 +204,14 @@
     }
   }
 
+  .additional-goods__inner {
+    margin: 0;
+    margin-right: auto;
+  }
+
   .additional-goods__link {
     width: 162px;
-    margin-right: 160px;
+    margin-right: 163px;
   }
 
   .additional-goods__parameter {
@@ -204,17 +229,18 @@
 
   .additional-goods__gift {
     width: 245px;
-    height: 289px;
     background-image: url("../../img/gift-photo-desktop@1x.jpg");
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 43px;
     margin-left: auto;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .additional-goods__text {
     text-align: center;
+    margin-top: 43px;
   }
 
   .additional-goods__button {

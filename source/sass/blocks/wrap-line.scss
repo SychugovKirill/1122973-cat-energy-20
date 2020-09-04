@@ -1,5 +1,6 @@
 .wrap-line {
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: "";

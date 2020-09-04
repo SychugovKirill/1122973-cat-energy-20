@@ -78,7 +78,7 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__wrap wrap-line">
+        <fieldset class="form__wrap form__wrap--contact  wrap-line">
           <legend class="form__title">Контактные данные (владельца кота)</legend>
           <div class="form__box form__box--contacts">
             <div class="form__group form__group--contacts">
@@ -89,7 +89,7 @@
               </div>
             </div>
             <div class="form__group form__group--contacts">
-              <label class="form__label form__label--contact" for="tel-user">Телефон:*</label>
+              <label class="form__label" for="tel-user">Телефон:*</label>
               <div class="field__wrap field__wrap--tel">
                 <input class="form__field form__field--contact" type="tel" id="tel-user" name="tel"
                   placeholder="8 (960) 900-60-90">
@@ -98,7 +98,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__wrap wrap-line">
+        <fieldset class="form__wrap form__wrap--comment wrap-line">
           <legend class="form__title">Комментарий</legend>
           <div class="form__box">
             <textarea class="form__comment" name="text" id="text" cols="30" rows="7"
@@ -106,8 +106,8 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__wrap wrap-line">
-          <legend class="form__title">Дополнительно</legend>
+        <fieldset class="form__wrap form__wrap--additional wrap-line">
+          <legend class="form__title form__title--additional">Дополнительно</legend>
           <ul class="form__box form__box--checkbox">
             <li class="form__group form__group--checkbox">
               <input class="form__checkbox visually-hidden" type="checkbox" id="sweetener" name="sweet" checked>
@@ -139,9 +139,10 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="contacts__inner">
+      <div class="contacts__inner contacts__inner--form">
         <b class="contacts__text">Приглашаем <br> к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__address"><span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+          Санкт-Петербург</p>
       </div>
       <picture>
         <source type="image/webp" media="(min-width: 1260px)"
