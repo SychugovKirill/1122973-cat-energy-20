@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -70,7 +72,8 @@
         </li>
         <li class="programs__item">
           <h3 class="programs__title programs__title--mass">Набор массы</h3>
-          <p class="programs__content programs__content--mass">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+          <p class="programs__content programs__content--mass">Заработать авторитет среди дворовых котов и даже собак?
+            Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы! </p>
           <a class="programs__link" href="catalog.html">Каталог pro</a>
         </li>
@@ -134,10 +137,10 @@
               <source media="(min-width: 1260px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-mobile@2x.png 2x">
               <img class="example__img example__img--before" id="cat-before" src="img/before-mobile@1x.png"
-                srcset="img/before-mobile@2x.png 2x" alt="До">
+                srcset="img/before-mobile@2x.png 2x" loading="lazy" alt="До">
             </picture>
-
           </div>
+
           <div class="example__inner example__inner--after">
             <picture>
               <source type="image/webp" media="(min-width: 1260px)"
@@ -149,15 +152,14 @@
               <source media="(min-width: 1260px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-mobile@2x.png 2x">
               <img class="example__img example__img--after" src="img/after-mobile@1x.png"
-                srcset="img/after-mobile@2x.png 2x" alt="После">
+                srcset="img/after-mobile@2x.png 2x" loading="lazy" alt="После">
             </picture>
           </div>
         </div>
         <div class="example__control">
           <span class="example__text-control">Было</span>
           <input class="example__button visually-hidden" type="checkbox" id="slider-button" name="slider-cat">
-          <label class="example__label" for="slider-button"></label>
-
+          <label class="example__label" for="slider-button" tabindex="0"> </label>
           <span class="example__text-control">Стало</span>
         </div>
 
@@ -180,7 +182,8 @@
 
         <source media="(min-width: 1260px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-mobile@2x.png 2x">
-        <img class="contacts__img" src="img/bg-map-mobile@1x.png 1x" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта">
+        <img class="contacts__img" src="img/bg-map-mobile@1x.png 1x" srcset="img/bg-map-mobile@2x.png 2x" loading="lazy"
+          alt="Карта">
       </picture>
     </section>
   </main>

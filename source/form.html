@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -46,13 +48,11 @@
           <fieldset class="form__box form__box--user">
             <div class="form__group form__group--user">
               <label class="form__label form__label--user" for="name-cat">Имя:*</label>
-              <input class="form__field form__field--user" type="text" id="name-cat" name="name" required
-                placeholder="Барсик">
+              <input class="form__field form__field--user" type="text" id="name-cat" name="name" placeholder="Барсик">
             </div>
             <div class="form__group form__group--user">
               <label class="form__label form__label--user" for="weight-cat">Вес (кг):*</label>
-              <input class="form__field form__field--user" type="number" id="weight-cat" name="weight" required
-                placeholder="7">
+              <input class="form__field form__field--user" type="number" id="weight-cat" name="weight" placeholder="7">
             </div>
             <div class="form__group form__group--user">
               <label class="form__label form__label--user" for="age-cat">Возраст (лет):</label>
@@ -78,21 +78,27 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__wrap form__wrap--contact  wrap-line">
-          <legend class="form__title">Контактные данные (владельца кота)</legend>
+        <fieldset class="form__wrap form__wrap--contact wrap-line">
+          <legend class="form__title">Контактные данные <br> (владельца кота)</legend>
           <div class="form__box form__box--contacts">
             <div class="form__group form__group--contacts">
               <label class="form__label form__label--contact" for="email-user">E-mail:*</label>
               <div class="field__wrap field__wrap--email">
                 <input class="form__field form__field--contact" type="email" id="email-user" name="email"
                   placeholder="kuklachev@gmail.com">
+                <svg class="form__icon form__icon--mail">
+                  <use xlink:href="img/sprite.svg#icon-mail" />
+                </svg>
               </div>
             </div>
             <div class="form__group form__group--contacts">
-              <label class="form__label" for="tel-user">Телефон:*</label>
+              <label class="form__label form__label--contact" for="tel-user">Телефон:*</label>
               <div class="field__wrap field__wrap--tel">
                 <input class="form__field form__field--contact" type="tel" id="tel-user" name="tel"
                   placeholder="8 (960) 900-60-90">
+                <svg class="form__icon form__icon--phone">
+                  <use xlink:href="img/sprite.svg#icon-phone" />
+                </svg>
               </div>
             </div>
           </div>
@@ -111,19 +117,23 @@
           <ul class="form__box form__box--checkbox">
             <li class="form__group form__group--checkbox">
               <input class="form__checkbox visually-hidden" type="checkbox" id="sweetener" name="sweet" checked>
-              <label class="form__label  form__label--checkbox" for="sweetener">Сахарозаменитель</label>
+              <label class="form__label  form__label--checkbox" for="sweetener"> <span
+                  class="label__checkbox--text">Сахарозаменитель</span> </label>
             </li>
             <li class="form__group form__group--checkbox">
               <input class="form__checkbox visually-hidden" type="checkbox" id="water" name="water">
-              <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
+              <label class="form__label form__label--checkbox" for="water"> <span class="label__checkbox--text">Питьевая
+                  вода</span> </label>
             </li>
             <li class="form__group form__group--checkbox">
               <input class="form__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
-              <label class="form__label form__label--checkbox" for="milk">Молоко</label>
+              <label class="form__label form__label--checkbox" for="milk"> <span
+                  class="label__checkbox--text">Молоко</span> </label>
             </li>
             <li class="form__group form__group--checkbox">
               <input class="form__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
-              <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
+              <label class="form__label form__label--checkbox" for="vitamins"> <span
+                  class="label__checkbox--text">Витамины</span> </label>
             </li>
           </ul>
         </fieldset>
@@ -153,7 +163,8 @@
 
         <source media="(min-width: 1260px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-mobile@2x.png 2x">
-        <img class="contacts__img" src="img/bg-map-mobile@1x.png 1x" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта">
+        <img class="contacts__img" src="img/bg-map-mobile@1x.png 1x" srcset="img/bg-map-mobile@2x.png 2x" loading="lazy"
+          alt="Карта">
       </picture>
     </section>
   </main>

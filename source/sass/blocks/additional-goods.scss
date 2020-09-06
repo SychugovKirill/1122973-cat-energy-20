@@ -77,6 +77,10 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+  }
+
   &::before {
     content: "";
     width: 60px;
@@ -161,6 +165,10 @@
     flex-direction: inherit;
     justify-content: space-between;
     padding: 0 120px 0 89px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .additional-goods__text {
@@ -236,6 +244,10 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .additional-goods__text {

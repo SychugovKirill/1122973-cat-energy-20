@@ -19,7 +19,6 @@
 .product-card__link {
   display: block;
   text-align: center;
-  letter-spacing: 1px;
 }
 
 .product-card__link--image {
@@ -175,6 +174,16 @@
     margin: 0 auto;
     margin-bottom: auto;
     line-height: 19px;
+  }
+
+  .product-card__link--all {
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
 
