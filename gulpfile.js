@@ -48,6 +48,7 @@ exports.htmlmini = htmlmini;
 const jsmin = () => {
   return gulp.src("source/js/*.js")
     .pipe(uglify())
+    .pipe(rename("js.min.js"))
     .pipe(gulp.dest("build/js"));
 };
 
