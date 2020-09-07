@@ -28,15 +28,15 @@
   }
 }
 
-.form__wrap--user {
+.form__container--user {
   margin-bottom: 27px;
 }
 
-.form__wrap--contact {
+.form__container--contact {
   margin-bottom: 30px;
 }
 
-.form__wrap--comment {
+.form__container--comment {
   margin-bottom: 23px;
 }
 
@@ -360,15 +360,15 @@ input::-webkit-inner-spin-button {
     padding: 0 70px;
   }
 
-  .form__wrap--contact {
+  .form__container--contact {
     margin-bottom: 65px;
   }
 
-  .form__wrap--comment {
+  .form__container--comment {
     margin-bottom: 60px;
   }
 
-  .form__wrap--additional {
+  .form__container--additional {
     margin-bottom: 55px;
   }
 
@@ -551,14 +551,18 @@ input::-webkit-inner-spin-button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    margin-bottom: 70px;
+  }
+
+  .form__container--contact {
+    margin-bottom: 70px;
+  }
+
+  .form__container--comment {
     margin-bottom: 65px;
   }
 
-  .form__wrap--comment {
-    margin-bottom: 65px;
-  }
-
-  .form__wrap--additional {
+  .form__container--additional {
     margin-bottom: 63px;
   }
 
@@ -575,6 +579,14 @@ input::-webkit-inner-spin-button {
     align-items: center;
   }
 
+  .form__label--user {
+    margin-right: 20px;
+  }
+
+  .form__group--user {
+    margin-bottom: 23px;
+  }
+
   .form__group--contacts {
     margin: 0;
     width: 570px;
@@ -589,9 +601,17 @@ input::-webkit-inner-spin-button {
     margin: 0;
   }
 
+  .form__field--user {
+    height: 50px;
+  }
+
   .form__title {
     margin-left: -40px;
     padding: 0 40px;
+  }
+
+  .form__title--contact {
+    margin-bottom: 80px;
   }
 
   .form__button {
