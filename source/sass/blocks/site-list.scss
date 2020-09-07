@@ -77,6 +77,9 @@
 @media (min-width: $desktop-width) {
   .site-list {
     padding-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    width: auto;
   }
 
   .site-list__link--index {

@@ -7,6 +7,10 @@
   padding-bottom: 0;
 }
 
+.page__header--form {
+  margin-bottom: 18px;
+}
+
 .page-header__logo {
   margin-bottom: 11px;
 }
@@ -16,17 +20,23 @@
     flex-direction: row;
     padding: 25px 30px;
   }
+
+  .page-header__logo {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     @include page-wrapper;
     margin: 0;
+    padding-top: 54px;
   }
 
   .page-header--index {
     position: absolute;
     z-index: 100;
     width: 100%;
+    padding-top: 54px;
   }
 }

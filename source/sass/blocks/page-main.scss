@@ -2,16 +2,8 @@
   margin-bottom: 22px;
 }
 
-// Catalog
-
 .page-main__catalog {
-  margin-bottom: 30px;
-}
-
-// Form
-
-.page-main__order {
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,10 +11,12 @@
     margin-bottom: 25px;
   }
 
-  //Catalog
+  .page-main__promo {
+    margin-bottom: 0;
+  }
 
   .page-main__catalog {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 
   .page-main__additional-goods {
@@ -35,11 +29,23 @@
     margin-bottom: 80px;
   }
 
+  .page-main__programs {
+    margin-bottom: 51px;
+  }
+
   .page-main__advantages {
     margin-bottom: 10px;
   }
 
   .page-main__catalog {
-    margin-bottom: 55px;
+    margin-bottom: 72px;
+  }
+
+  .page-main__additional-goods {
+    margin-bottom: 85px;
+  }
+
+  .page-main__order {
+    margin-bottom: 42px;
   }
 }

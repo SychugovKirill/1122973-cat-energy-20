@@ -10,8 +10,9 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
-const del = require('del');
-const posthtml = require("gulp-posthtml");
+const del = require("del");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 
 // Styles
 
@@ -34,19 +35,28 @@ exports.styles = styles;
 
 // html
 
-const html = () => {
+const htmlmini = () => {
   return gulp.src("source/*.html")
-    .pipe(posthtml())
-    .pipe(gulp.dest("build"))
-    .pipe(sync.stream());
-}
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+};
 
-exports.html = html;
+exports.htmlmini = htmlmini;
+
+//JS
+
+const jsmin = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
+};
+
+exports.jsmin = jsmin;
 
 //img
 
 const images = () => {
-  return gulp.src("build/img/**/*.{jpg,png,svg}")
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.mozjpeg({ quality: 75, progressive: true }),
@@ -64,9 +74,9 @@ exports.images = images;
 // Webp
 
 const webpimg = () => {
-  return gulp.src("build/img/**/*.{jpeg,png}")
+  return gulp.src("source/img/**/*.{jpeg,png}")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.webpimg = webpimg;
@@ -96,7 +106,6 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*ico",
   ], {
     base: "source"
@@ -128,12 +137,12 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("build/css/*.css").on("change", sync.reload);
-  gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/*.html", gulp.series("htmlmini"));
   gulp.watch("build/*.html").on("change", sync.reload);
 }
 
 exports.build = gulp.series(
-  clean, copy, styles, sprite, html
+  clean, webpimg, images, copy, styles, sprite, htmlmini, jsmin
 );
 
 exports.default = gulp.series(
