@@ -16,7 +16,7 @@ const uglify = require("gulp-uglify");
 
 // Styles
 
-const styles = () => {
+const stylesmin = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -26,6 +26,21 @@ const styles = () => {
     ]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.stylesmin = stylesmin;
+
+const styles = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -143,7 +158,7 @@ const watcher = () => {
 }
 
 exports.build = gulp.series(
-  clean, webpimg, images, copy, styles, sprite, htmlmini, jsmin
+  clean, webpimg, images, copy, styles, stylesmin, sprite, htmlmini, jsmin
 );
 
 exports.default = gulp.series(

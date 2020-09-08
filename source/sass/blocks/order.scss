@@ -249,7 +249,7 @@ input::-webkit-inner-spin-button {
   height: 20px;
 }
 
-.field__wrap {
+.form__field-wrap {
   position: relative;
   flex-grow: 1;
   display: flex;
@@ -462,13 +462,13 @@ input::-webkit-inner-spin-button {
     height: 13px;
   }
 
-  .field__wrap--email {
+  .form__field-wrap--email {
     &::after {
       right: 15px;
     }
   }
 
-  .field__wrap--tel {
+  .form__field-wrap--tel {
     &::after {
       right: 15px;
     }
@@ -577,6 +577,7 @@ input::-webkit-inner-spin-button {
   .form__box--contacts {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .form__label--user {

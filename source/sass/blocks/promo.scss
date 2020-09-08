@@ -3,7 +3,6 @@
 
   text-align: center;
   overflow-wrap: break-word;
-  font-family: $font-basic;
   color: #ffffff;
 
   &::after {
@@ -106,7 +105,6 @@
     position: relative;
     padding: 0;
     padding-left: calc(50% - 610px);
-    font-family: $font-basic;
     color: #000000;
 
     &::after {
